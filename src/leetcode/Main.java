@@ -2,17 +2,15 @@ package leetcode;
 
 public class Main {
 	public static void main(String [] args) {
-		int tree [] = {1,2,2,3,4,4,3};
+
+		LeetCode819 a = new LeetCode819();
 		
-		TreeNode root = new TreeNode(tree[0], new TreeNode(2), new TreeNode(2));
-		root.left.left = new TreeNode(3);
-		root.left.right = new TreeNode(4);
+		String paragraph = "Bob hit a ball, the hit BALL flew far after it was hit.";
+		String [] banned = {"hit"};
 		
-		root.right.right = new TreeNode(3);
-		root.right.left = new TreeNode(4);
+		a.mostCommonWord(paragraph, banned);
 		
-		leetcode101 a= new leetcode101();
-		a.isSymmetric(root);
+		
 		
 	}
 }

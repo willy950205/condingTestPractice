@@ -33,16 +33,13 @@ public class Baekjoon1753 {
 		
 	}
 	
-	public static void main(String args[]) {
-		
-		
+	public static void main(String args[]) {		
 		
 		Scanner scn = new Scanner(System.in);
 		
 		// 다익스트라 알고리즘 사용
 		// 어려웠던 점 : 다익스트라를 실제로 구현하는 부분이 가장 어려웠음.
 		// 수도 코드만으로는 힘들어서 결국 자료를 찾아봄
-		// 
 		
 		int V = scn.nextInt();
 		int E = scn.nextInt();		
