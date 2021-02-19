@@ -3,10 +3,21 @@ package programmers;
 public class Main {
     public static void main(String [] args){
         
-    	int [][] tri = {{7}, {3, 8}, {8, 1, 0}, {2, 7, 4, 4}, {4, 5, 2, 6, 5}}	;
+    	boolean [] a = new boolean [3];
     	
-    	IntegerTriangle a = new IntegerTriangle();
-    	System.out.println(a.solution(tri));
+    	a[0]=true;
+    	
+    	for(int i=0; i<3; i++) {
+    		System.out.println(a[i]);
+    	}
+    	System.out.println();
+    	boolean [] b = a.clone();
+    	b[1] = true;
+    	for(int i=0; i<3; i++) {
+    		System.out.println(b[i]);
+    	}
+    	System.out.println();
+    	System.out.println(a==b);
     	
     }
 }
