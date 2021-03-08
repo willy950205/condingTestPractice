@@ -1,23 +1,16 @@
 package programmers;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class Main {
-    public static void main(String [] args){
+    public static void main(String [] args) throws IOException {
         
-    	boolean [] a = new boolean [3];
-    	
-    	a[0]=true;
-    	
-    	for(int i=0; i<3; i++) {
-    		System.out.println(a[i]);
-    	}
-    	System.out.println();
-    	boolean [] b = a.clone();
-    	b[1] = true;
-    	for(int i=0; i<3; i++) {
-    		System.out.println(b[i]);
-    	}
-    	System.out.println();
-    	System.out.println(a==b);
+    	Schoolroad a = new Schoolroad();
+    	int[][] puddles = {{2,2}};
+    	a.solution(4, 3, puddles);
+    			
     	
     }
 }
